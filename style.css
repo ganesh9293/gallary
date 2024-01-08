@@ -1,0 +1,104 @@
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* Style the navigation links */
+  #myMenu b {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  /* <li><b href="#">HTML</b></li> */
+  #myMenu li b:hover {
+    background-color: #eee;
+  }
+  .our-services {
+    margin-top:  50px;
+  }
+  .flip-container {
+    -webkit-perspective: 1000;
+    margin: 0 auto 60px auto;
+    margin-top: -20%;
+    width: 320px;
+    height: 200px;
+    border-radius: 15px;
+    cursor:pointer;
+  }
+  
+  .flip-container:hover .flipper {
+    -webkit-transform: rotateY(540deg);
+    cursor:pointer;
+  }
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    cursor:pointer;
+  }
+  
+  .front {
+    width: 320px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .front h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  
+  .front img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  
+  .back {
+    width: 320px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(180deg);
+    text-align: center;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  
+  .back h3 {
+    margin-top: 20px;
+  }
+  
+  .back p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    margin-right:15px;
+  }
+  
+  .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+  }
+  .dsa{
+    padding-left: 70px;
+  }
